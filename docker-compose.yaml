@@ -1,0 +1,13 @@
+version: '3'
+services:
+    starwarsapi:
+        image: 'event-backend-api'
+        restart: always
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        ports:
+        - '4000:4000'
+        environment:
+        - NODE_ENV=development
+        - PORT=4000
