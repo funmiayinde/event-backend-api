@@ -52,12 +52,12 @@ const EventSchema = new AppSchema(
  * @return {Object} The validator object with specified rules
  **/
 EventSchema.statics.fillables = [
-    'title',
-    'description',
-    'category',
-    'date',
-    'isVirtual',
-    'address',
+  'title',
+  'description',
+  'category',
+  'date',
+  'isVirtual',
+  'address',
 ];
 
 /**
@@ -78,7 +78,7 @@ EventSchema.statics.getProcessor = (model: any | AppModel<Event>) => {
  * @return {Object} The validator object with specified rules
  * */
 EventSchema.statics.getValidator = (): EventValidation => {
-    return new EventValidation();
+  return new EventValidation();
 };
 
 export interface Event extends Document {

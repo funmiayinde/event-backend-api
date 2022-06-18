@@ -18,7 +18,6 @@ export default class EventValidation extends AppValidation {
       address: 'required|string',
       category: 'required|string',
       date: 'required',
-      isVirtual: 'required|bool',
     };
     const validator = new Validator(obj, rules);
     return {
