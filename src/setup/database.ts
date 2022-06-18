@@ -13,6 +13,11 @@ export default () => {
     .connect(`${databaseUrl}`, {
       autoIndex: true,
       autoCreate: true,
+      maxPoolSize: 2000,
+      useFindAndModify: true,
+      useCreateIndex: true,
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
     })
     .then(() => {
       log.debug(`Database loaded -url -${databaseUrl}`);

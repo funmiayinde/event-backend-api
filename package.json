@@ -41,7 +41,7 @@
         "http-status-codes": "^2.2.0",
         "lodash": "^4.17.11",
         "moment": "^2.29.3",
-        "mongoose": "^6.3.8",
+        "mongoose": "^5.7.5",
         "morgan": "^1.10.0",
         "q": "^1.5.1",
         "query-string": "^6.8.3",
